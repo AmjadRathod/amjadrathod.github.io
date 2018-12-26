@@ -55,13 +55,13 @@ function findMyTopic(tree){
 
     // check sub pages in section
     for (var k=0;k<branch.length;k++){
-  
+
       // first check branch itself <NOTE> we need to do this because our header sections are links
       if (branch[k].path == pageURL && !branch[k].nosync){
         thisIsIt = true;
         break;
       }
-  
+
       if (branch[k].path == pageURL && !branch[k].nosync){
         // console.log(branch[k].path + ' was == ' + pageURL)
         thisIsIt = true;
@@ -70,9 +70,9 @@ function findMyTopic(tree){
         // else recurse through branch
         if (branch[k].section) {
           processBranch(branch[k].section);
-        } 
+        }
       }
-      
+
     }
   }
 
@@ -138,7 +138,7 @@ function walkTree(tree)
       // auto-generate a TOC from a collection
       walkTree(collectionsTOC[tree[j].generateTOC]);
     } else {
-      
+
       // just a regular old topic; this is a leaf, not a branch; render a link!
       outputLetNav.push('<li><a href="' + tree[j].path + '"');
       if (tree[j].path == pageURL && !tree[j].nosync)
@@ -195,9 +195,12 @@ function renderNav(docstoc) {
       outputLetNav.push('<li><a'+highlightGloss+' href="/glossary/?term=' + glossary[i].term + '">'+glossary[i].term+'</a></li>');
     }
   }
-  document.getElementById('jsTOCHorizontal').innerHTML = outputHorzTabs.join('');
-  console.log("jsTOCLeftNav is:  ", outputLetNav.join(''));
-  document.getElementById('jsTOCLeftNav').innerHTML = outputLetNav.join('');
+  else {
+
+    document.getElementById('jsTOCHorizontal').innerHTML = outputHorzTabs.join('');
+    console.log("jsTOCLeftNav is:  ", outputLetNav.join(''));
+    document.getElementById('jsTOCLeftNav').innerHTML = outputLetNav.join('');
+  }
 }
 
 function highlightRightNav(heading)
@@ -500,4 +503,3 @@ window.onload = function() {
     //console.log("Keeping non-applicable elements hidden.");
   }
 };
-
