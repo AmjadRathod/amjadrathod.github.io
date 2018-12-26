@@ -1,0 +1,13 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+docs.html
+postx.html
+attachments/
+Gemfile.lock
+.vscode/
+
+
+# python related ignores
+__pycache__/
