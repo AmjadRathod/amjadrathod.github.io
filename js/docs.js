@@ -195,12 +195,9 @@ function renderNav(docstoc) {
       outputLetNav.push('<li><a'+highlightGloss+' href="/glossary/?term=' + glossary[i].term + '">'+glossary[i].term+'</a></li>');
     }
   }
-  else {
-
-    document.getElementById('jsTOCHorizontal').innerHTML = outputHorzTabs.join('');
-    console.log("jsTOCLeftNav is:  ", outputLetNav.join(''));
-    document.getElementById('jsTOCLeftNav').innerHTML = outputLetNav.join('');
-  }
+  document.getElementById('jsTOCHorizontal').innerHTML = outputHorzTabs.join('');
+  console.log("jsTOCLeftNav is:  ", outputLetNav.join(''));
+  document.getElementById('jsTOCLeftNav').innerHTML = outputLetNav.join('');
 }
 
 function highlightRightNav(heading)
