@@ -162,7 +162,7 @@ function renderNav(docstoc) {
       // build vertical nav
       var itsHere = findMyTopic(docstoc[docstoc.horizontalnav[i].node]);
       console.log(findMyTopic(docstoc[docstoc.horizontalnav[i].node]));
-      console.log("amjad");
+      console.log(pageURL);
       if (itsHere || docstoc.horizontalnav[i].path == pageURL)
       {
         walkTree(docstoc[docstoc.horizontalnav[i].node]);

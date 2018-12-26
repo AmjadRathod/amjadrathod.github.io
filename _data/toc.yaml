@@ -1,6 +1,6 @@
 horizontalnav:
 - title: About
-  path: /
+  path: amjadrathod.github.io
   node: about
 - title: Get Started
   path: /wGetStarted/Creating-with-INTERJECT_61702187.html
@@ -17,21 +17,21 @@ horizontalnav:
 - title: Apps
   path: /wApps/How-to-articles_129245729.html
   node: apps
-- title: Portal Site 
+- title: Portal Site
   path: /wPortal/Altering-User-Passwords_323452989
   node: portal
 
 design:
 - sectiontitle: Designing Reports
   path: /wDesign/Reporting-Design-Standards.html
-  section:  
+  section:
   - title: Designing Excel Reports
     path: /wDesign/Designing-Excel-Reports.html
 
 
 about:
-- sectiontitle: INTERJECT Data Systems 
-  path: /
+- sectiontitle: INTERJECT Data Systems
+  path: amjadrathod.github.io
   section:
   - sectiontitle: What Does INTERJECT Do?
     path: /wAbout/61702415.html
@@ -74,7 +74,7 @@ about:
     - title: Tabular vs Data Cells
       path: /wAbout/Tabular-vs-Data-Cells_61702447.html
 
-  
+
 
 apps:
   - title: How-to articles
@@ -221,7 +221,7 @@ index:
         - title: ReportDefaults()
           path: /wIndex/ReportDefaults_61702546.html
         - title: ReportGrouping()
-          path: /wIndex/ReportGrouping.html  
+          path: /wIndex/ReportGrouping.html
         - title: ReportHideRowOrColumn()
           path: /wIndex/ReportHideRowOrColumn_341147669.html
         - title: ReportMerge()
@@ -296,10 +296,10 @@ portal:
         path: /wPortal/INTERJECT-Roles_324468787.html
       - title: Altering User Passwords
         path: /wPortal/Altering-User-Passwords_323452989.html
-  
 
 
-   
+
+
 Developer:
 - sectiontitle: Developer
   path: /wApi/DeveloperMain.html
