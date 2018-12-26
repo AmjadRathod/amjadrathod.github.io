@@ -196,6 +196,7 @@ function renderNav(docstoc) {
     }
   }
   document.getElementById('jsTOCHorizontal').innerHTML = outputHorzTabs.join('');
+  console.log("jsTOCHorizontal is:  ", outputHorzTabs.join(''));
   console.log("jsTOCLeftNav is:  ", outputLetNav.join(''));
   document.getElementById('jsTOCLeftNav').innerHTML = outputLetNav.join('');
 }
