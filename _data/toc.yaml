@@ -1,6 +1,6 @@
 horizontalnav:
 - title: About
-  path: amjadrathod.github.io
+  path: /
   node: about
 - title: Get Started
   path: /wGetStarted/Creating-with-INTERJECT_61702187.html
@@ -31,7 +31,7 @@ design:
 
 about:
 - sectiontitle: INTERJECT Data Systems
-  path: amjadrathod.github.io
+  path: /
   section:
   - sectiontitle: What Does INTERJECT Do?
     path: /wAbout/61702415.html

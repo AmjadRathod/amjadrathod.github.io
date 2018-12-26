@@ -73,7 +73,7 @@
 	<link rel="apple-touch-icon" type="image/x-icon" href="/favicons/docs@2x.ico" sizes="129x128">
 	<meta property="og:image" content="/favicons/docs@2x.ico"/>
 	<!-- metadata -->
-	
+
 
     <link rel="stylesheet" href="/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -82,20 +82,20 @@
 
 	<!-- Go get "Open Sans" font from Google -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	
+
 	{% if page.hide_from_sitemap %}<meta name="robots" content="noindex" />{% endif %}
-	
+
     {% seo %}
-</head>	
+</head>
 
 <body id="main_body" class="colums">
-	
+
 
 	<header>
 		{% if page.landing == true %}{% include global-header.html %}{% endif %} {% if page.landing != true %}{% include header.html %}{% endif %}
 	</header>
 
-	
+
 
 	<!-- nav bar -->
 	<div class="{% if page.landing == true %}wrapper{%else%}wrapper right-open{% endif %}">
@@ -114,9 +114,9 @@
 									{ site.data.advisories.texts[page.advisory] | markdownify }
 								}
 							</blockquote>
-							
+
 									{% endif %}
-									{% endif %} 
+									{% endif %}
 									{% unless page.tree == false %}
 									{% include read_time.html %}
 									{% endunless %}
@@ -321,7 +321,7 @@
 	if (jekyllEnv == 'development') {
 		jekyllEnv = '';
 	}
-	var pageURL = jekyllEnv + '{{ page.url }}';
+	var pageURL = '{{ page.url }}';
 	</script>
 	<script src="/js/archive.js"></script>
 	<script src="/js/stickyfill.min.js"></script>
