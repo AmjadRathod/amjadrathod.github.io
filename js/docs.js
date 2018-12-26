@@ -161,6 +161,8 @@ function renderNav(docstoc) {
       currentSection = docstoc.horizontalnav[i].node;
       // build vertical nav
       var itsHere = findMyTopic(docstoc[docstoc.horizontalnav[i].node]);
+      console.log(findMyTopic(docstoc[docstoc.horizontalnav[i].node]));
+      console.log("amjad");
       if (itsHere || docstoc.horizontalnav[i].path == pageURL)
       {
         walkTree(docstoc[docstoc.horizontalnav[i].node]);
@@ -196,8 +198,8 @@ function renderNav(docstoc) {
     }
   }
   document.getElementById('jsTOCHorizontal').innerHTML = outputHorzTabs.join('');
-  console.log("jsTOCHorizontal is:  ", outputHorzTabs.join(''));
-  console.log("jsTOCLeftNav is:  ", outputLetNav.join(''));
+  // console.log("jsTOCHorizontal is:  ", outputHorzTabs.join(''));
+  // console.log("jsTOCLeftNav is:  ", outputLetNav.join(''));
   document.getElementById('jsTOCLeftNav').innerHTML = outputLetNav.join('');
 }
 
